@@ -1,0 +1,9 @@
+.home {
+  height: 90vh;
+  min-height: 350px;
+  background: url("src/assets/home.jpg") no-repeat scroll center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

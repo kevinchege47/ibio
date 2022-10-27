@@ -1,0 +1,23 @@
+<p class="mt-5">filter works!</p>
+<p class="mt-5">filter works!</p>
+<div class="dropdown">
+  <label class="ml-2">Petrol Station</label>
+  <input class="dropdown-toggle form-control form-control-sm ml-2" style="width: 15%" [(ngModel)]="age" data-toggle="dropdown" (keyup)="onKey($event)">
+
+  <div class="dropdown-menu" style="width: 15%">
+    <ul *ngFor="let fuel of fuels">
+      <div (click)="station(fuel)" class="row" >
+        <div>
+          <i class="fa fa-plus-circle mt-1"></i>
+        </div>
+        <div>
+          <li  class="dropdown-item">{{fuel}}</li>
+        </div>
+
+      </div>
+
+    </ul>
+
+  </div>
+</div>
+
